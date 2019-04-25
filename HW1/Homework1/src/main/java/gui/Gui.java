@@ -11,10 +11,13 @@ import javax.swing.JTextField;
 
 import controller.Controller;
 
+/**
+ * Front end of the Project
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Gui extends JFrame {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JLabel txt1;
 	private JLabel txt2;

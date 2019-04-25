@@ -10,6 +10,13 @@ import strategy.SelectionPolicy;
 import strategy.Strategy;
 import strategy.TimeStrategy;
 
+/**
+ * The Scheduler adds the Clients as they come, according to the choosen
+ * strategy
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Scheduler {
 	private List<Server> servers;
 	private List<Thread> threads;

@@ -1,11 +1,17 @@
 package server;
 
+/**
+ * Class representing the task of the server
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Client {
 	private int arrivalTime;
 	private int name;
-	private int processingTime;
-	private int waitingTime;
-	private int timeLeft;
+	private int processingTime;// how long it takes for the server to serve the Client
+	private int waitingTime;// how much this particular Client must wait to be served
+	private int timeLeft;// the time left for serving
 
 	public Client(int arrivalTime, int processingTime, int name) {
 		super();

@@ -6,6 +6,12 @@ import gui.GUI;
 import server.Client;
 import server.Server;
 
+/**
+ * Clients will find the server with the least number of clients
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class QueueStrategy implements Strategy {
 	public Server addClient(List<Server> servers, Client c) {
 		Server bestServer = servers.get(0);

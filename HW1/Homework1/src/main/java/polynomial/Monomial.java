@@ -1,5 +1,11 @@
 package polynomial;
 
+/**
+ * Structure used to hold one monomial
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Monomial {
 	private float coeff;
 	private int power;

@@ -6,16 +6,22 @@ import java.util.concurrent.atomic.AtomicInteger;
 import controller.Controller;
 import gui.GUI;
 
+/**
+ * Servers serve Clients as they appear
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Server implements Runnable {
 	private int name;
-	private int[] servedClients = new int[100];
+	private int[] servedClients = new int[100]; // number of served clients
 	private int[] serviceTime = new int[100];
 	private int[] waitingQueueTime = new int[100];
 	private int[] emptyQueueTime = new int[100];
 	private int[] nrOfClients = new int[100];
 	private Client currentClient;
 	private ArrayBlockingQueue<Client> clients;
-	private AtomicInteger waitingTime;
+	private AtomicInteger waitingTime;// the waiting time a new Client added to the server would take
 
 	public Server(int name) {
 		super();

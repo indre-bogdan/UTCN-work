@@ -17,6 +17,12 @@ import controller.Controller;
 import server.Client;
 import server.Server;
 
+/**
+ * The graphic user interface
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class GUI extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JLabel[] txt;

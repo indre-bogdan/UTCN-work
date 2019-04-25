@@ -6,6 +6,12 @@ import java.util.regex.Pattern;
 
 import polynomial.Polynomial;
 
+/**
+ * The Controller is the link between the GUI and back end of the project
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Controller {
 	private Polynomial[] polynomials = new Polynomial[2];
 	private Polynomial[] result = new Polynomial[2];
@@ -19,12 +25,25 @@ public class Controller {
 		result[1] = new Polynomial();
 	}
 	
+	/**
+	 * Checks if s matches the pattern
+	 * 
+	 * @param s
+	 * @return
+	 */
 	public boolean checkString(String s) {
 		Matcher matcher = pattern.matcher(s);
 		boolean matches = matcher.matches();
 		return matches;
 	}
 
+	/**
+	 * Converts String s of the pol (can be 1 or 2) in a Polynomial
+	 * 
+	 * @param s
+	 * @param pol
+	 * @return True on success, false otherwise
+	 */
 	public boolean StringToPoly(String s, int pol) {
 		StringTokenizer multiTokenizer = new StringTokenizer(s, " ");
 		String a = new String();

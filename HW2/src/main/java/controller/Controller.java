@@ -4,11 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import javax.swing.JFrame;
+
 import gui.GUI;
 import server.Client;
 import server.Server;
 import strategy.SelectionPolicy;
 
+/**
+ * Controls the flow of the application
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Controller implements Runnable {
 	public static boolean start = false;
 	public static boolean reset = false;
@@ -42,6 +50,10 @@ public class Controller implements Runnable {
 
 	}
 
+	/**
+	 * Generates clients based on the user input
+	 * 
+	 */
 	public void generateClients() {
 		Random random = new Random();
 		int procTime;
@@ -56,6 +68,11 @@ public class Controller implements Runnable {
 
 	}
 
+	/**
+	 * The servers run as long as there still are clients to proccess
+	 * 
+	 * @return
+	 */
 	private boolean closeCondition() {
 		if (currentTime < timeLimit)
 			return false;
@@ -68,10 +85,12 @@ public class Controller implements Runnable {
 		return true;
 	}
 	public void run() {
-		gui.initSetup(scheduler.getServers());
+		this.gui.initSetup(scheduler.getServers());
+		gui.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		for (Thread t : this.scheduler.getThreads()) {
 			t.start();
 		}
+
 		currentTime = 0;
 
 		while (!closeCondition()) {

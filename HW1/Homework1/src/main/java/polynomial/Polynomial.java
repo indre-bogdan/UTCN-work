@@ -3,6 +3,12 @@ package polynomial;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Structure used to hold a Polynomial
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class Polynomial {
 	private ArrayList<Monomial> pol;
 
@@ -23,6 +29,11 @@ public class Polynomial {
 		pol.add(a);
 	}
 
+	/**
+	 * "Collapses" the polynomial: adds terms with the same power and gets rid of
+	 * the monomials with coefficient 0
+	 * 
+	 */
 	public void collapse() {
 		for (int i = 0; i < this.pol.size() - 1; i++) {
 			for (int j = i + 1; j < this.pol.size(); j++) {

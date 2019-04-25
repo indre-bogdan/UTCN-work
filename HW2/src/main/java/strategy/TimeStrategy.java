@@ -6,6 +6,12 @@ import gui.GUI;
 import server.Client;
 import server.Server;
 
+/**
+ * Clients will find the server with the least waitingTime
+ * 
+ * @author IndreBogdan
+ *
+ */
 public class TimeStrategy implements Strategy {
 
 	public Server addClient(List<Server> servers, Client c) {
