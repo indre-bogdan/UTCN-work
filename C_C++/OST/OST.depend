@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1542837207 source:c:\users\asus\desktop\fa\ost\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<algorithm>
+	"Profiler.h"
+
+1538822505 c:\users\asus\desktop\fa\ost\profiler.h
+	<Windows.h>
+	<Shellapi.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<typeinfo>
+	<map>
+	<vector>
+	<algorithm>
+	<functional>
+	<string>
+

@@ -1,0 +1,483 @@
+
+*** Running vivado
+    with args -log test_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source test_env.tcl -notrace
+Command: synth_design -top test_env -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13032 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 389.238 ; gain = 99.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:50]
+INFO: [Synth 8-3491] module 'MPG2' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/MPG2.vhd:35' bound to instance 'C2' of component 'MPG2' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'MPG2' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/MPG2.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'MPG2' (1#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/MPG2.vhd:41]
+INFO: [Synth 8-3491] module 'LCD' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:35' bound to instance 'C3' of component 'LCD' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'LCD' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:45]
+INFO: [Synth 8-226] default block is never used [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:62]
+WARNING: [Synth 8-614] signal 'd0' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:60]
+WARNING: [Synth 8-614] signal 'd1' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:60]
+WARNING: [Synth 8-614] signal 'd2' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:60]
+WARNING: [Synth 8-614] signal 'd3' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:60]
+WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:73]
+INFO: [Synth 8-226] default block is never used [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'LCD' (2#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:45]
+INFO: [Synth 8-3491] module 'FetchUnit' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:36' bound to instance 'C4' of component 'FetchUnit' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'FetchUnit' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:49]
+WARNING: [Synth 8-614] signal 'PCSrc' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:102]
+WARNING: [Synth 8-614] signal 'aux' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:102]
+WARNING: [Synth 8-614] signal 'BranchAddress' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:102]
+WARNING: [Synth 8-614] signal 'JumpCond' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:110]
+WARNING: [Synth 8-614] signal 'mux' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:110]
+WARNING: [Synth 8-614] signal 'JumpAddress' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'FetchUnit' (3#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:49]
+INFO: [Synth 8-3491] module 'REG2' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/REG2.vhd:38' bound to instance 'C5' of component 'REG2' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'REG2' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/REG2.vhd:52]
+INFO: [Synth 8-3491] module 'REG' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/REG.vhd:34' bound to instance 'C3' of component 'REG' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/REG2.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'REG' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/REG.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'REG' (4#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/REG.vhd:46]
+WARNING: [Synth 8-614] signal 'Instr' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/REG2.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'REG2' (5#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/REG2.vhd:52]
+INFO: [Synth 8-3491] module 'CTR' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/CTR.vhd:35' bound to instance 'C6' of component 'CTR' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'CTR' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/CTR.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'CTR' (6#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/CTR.vhd:49]
+INFO: [Synth 8-3491] module 'Exec' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:38' bound to instance 'C7' of component 'Exec' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'Exec' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:55]
+INFO: [Synth 8-226] default block is never used [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:63]
+INFO: [Synth 8-226] default block is never used [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:65]
+WARNING: [Synth 8-614] signal 'funct' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:61]
+WARNING: [Synth 8-614] signal 'RD1' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:89]
+WARNING: [Synth 8-614] signal 'Mux1OUt' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:89]
+WARNING: [Synth 8-614] signal 'sa' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:89]
+WARNING: [Synth 8-614] signal 'RD2' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:112]
+WARNING: [Synth 8-614] signal 'Ext_imm' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'Exec' (7#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:55]
+INFO: [Synth 8-3491] module 'RAMMemory' declared at 'D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/RAMMemory.vhd:36' bound to instance 'C8' of component 'RAMMemory' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'RAMMemory' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/RAMMemory.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'RAMMemory' (8#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/RAMMemory.vhd:46]
+INFO: [Synth 8-226] default block is never used [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:189]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'Instruction' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'PC' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'RD1' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'RD2' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'Ext_Imm' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'AluRezultat' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'Memdata' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+WARNING: [Synth 8-614] signal 'WD' is read in the process but is not in the sensitivity list [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (9#1) [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/test_env.vhd:50]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[15]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[14]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[13]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[12]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[11]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[10]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[9]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port AluRes[8]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port enable[3]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port enable[2]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port enable[1]
+WARNING: [Synth 8-3331] design RAMMemory has unconnected port enable[0]
+WARNING: [Synth 8-3331] design REG2 has unconnected port Instr[15]
+WARNING: [Synth 8-3331] design REG2 has unconnected port Instr[14]
+WARNING: [Synth 8-3331] design REG2 has unconnected port Instr[13]
+WARNING: [Synth 8-3331] design FetchUnit has unconnected port enable[4]
+WARNING: [Synth 8-3331] design FetchUnit has unconnected port enable[3]
+WARNING: [Synth 8-3331] design FetchUnit has unconnected port enable[2]
+WARNING: [Synth 8-3331] design FetchUnit has unconnected port enable[0]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 441.922 ; gain = 151.684
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 441.922 ; gain = 151.684
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/All kind of stuff/dsd project/lab5/lab5.srcs/constrs_1/imports/Desktop/basys3.xdc]
+Finished Parsing XDC File [D:/All kind of stuff/dsd project/lab5/lab5.srcs/constrs_1/imports/Desktop/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/All kind of stuff/dsd project/lab5/lab5.srcs/constrs_1/imports/Desktop/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 775.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 775.176 ; gain = 484.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 775.176 ; gain = 484.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 775.176 ; gain = 484.938
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element mem_reg was removed.  [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/MPG2.vhd:53]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:56]
+INFO: [Synth 8-5546] ROM "ROM" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element PC2_reg_rep was removed.  [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/FetchUnit.vhd:93]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:91]
+WARNING: [Synth 8-327] inferring latch for variable 'AluRes_reg' [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/new/Exec.vhd:92]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 775.176 ; gain = 484.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_env 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+Module MPG2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 3     
+Module LCD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module FetchUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module REG2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+Module CTR 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 8     
+Module Exec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   8 Input     16 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module RAMMemory 
+Detailed RTL Component Info : 
++---RAMs : 
+	               4K Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element C2/mem_reg was removed.  [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/MPG2.vhd:53]
+WARNING: [Synth 8-6014] Unused sequential element C3/count_reg was removed.  [D:/All kind of stuff/dsd project/lab5/lab5.srcs/sources_1/imports/new/LCD.vhd:56]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[1]
+WARNING: [Synth 8-3332] Sequential element (C4/PC2_reg_rep[8]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (C2/D1Out_reg[2]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (C2/D2Out_reg[2]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (C2/D3Out_reg[2]) is unused and will be removed from module test_env.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 775.176 ; gain = 484.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object         | Inference | Size (Depth x Width) | Primitives       | 
++------------+--------------------+-----------+----------------------+------------------+
+|test_env    | C8/RAM_reg         | Implied   | 256 x 16             | RAM256X1S x 16   | 
+|test_env    | C5/C3/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6       | 
++------------+--------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 777.766 ; gain = 487.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 835.063 ; gain = 544.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object         | Inference | Size (Depth x Width) | Primitives       | 
++------------+--------------------+-----------+----------------------+------------------+
+|test_env    | C8/RAM_reg         | Implied   | 256 x 16             | RAM256X1S x 16   | 
+|test_env    | C5/C3/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6       | 
++------------+--------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    20|
+|3     |LUT1      |     5|
+|4     |LUT2      |     9|
+|5     |LUT3      |    45|
+|6     |LUT4      |    50|
+|7     |LUT5      |    40|
+|8     |LUT6      |    75|
+|9     |MUXF7     |    17|
+|10    |RAM256X1S |    16|
+|11    |RAM32M    |     6|
+|12    |FDCE      |    24|
+|13    |FDRE      |    54|
+|14    |LD        |    16|
+|15    |IBUF      |     9|
+|16    |OBUF      |    20|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   407|
+|2     |  C2     |MPG2      |    39|
+|3     |  C3     |LCD       |    25|
+|4     |  C4     |FetchUnit |   180|
+|5     |  C5     |REG2      |    55|
+|6     |    C3   |REG       |    55|
+|7     |  C7     |Exec      |    35|
+|8     |  C8     |RAMMemory |    32|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 836.074 ; gain = 212.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 836.074 ; gain = 545.836
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  LD => LDCE: 16 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 836.074 ; gain = 557.957
+INFO: [Common 17-1381] The checkpoint 'D:/All kind of stuff/dsd project/lab5/lab5.runs/synth_1/test_env.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_env_utilization_synth.rpt -pb test_env_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 836.074 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 08:43:03 2019...

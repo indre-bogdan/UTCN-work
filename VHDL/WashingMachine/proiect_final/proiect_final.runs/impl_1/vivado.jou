@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May  7 04:05:56 2018
+# Process ID: 7628
+# Current directory: D:/All kind of stuff/dsd project/proiect_final/proiect_final.runs/impl_1
+# Command line: vivado.exe -log state.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source state.tcl -notrace
+# Log file: D:/All kind of stuff/dsd project/proiect_final/proiect_final.runs/impl_1/state.vdi
+# Journal file: D:/All kind of stuff/dsd project/proiect_final/proiect_final.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source state.tcl -notrace

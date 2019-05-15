@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1542266986 source:c:\users\asus\desktop\fa\bucketopenaddressing\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	"Profiler.h"
+	<time.h>
+	<cmath>
+	<sys/time.h>
+
+1538822505 c:\users\asus\desktop\fa\bucketopenaddressing\profiler.h
+	<Windows.h>
+	<Shellapi.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<typeinfo>
+	<map>
+	<vector>
+	<algorithm>
+	<functional>
+	<string>
+
