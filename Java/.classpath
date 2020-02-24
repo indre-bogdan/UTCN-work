@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="HW1/Homework1/src/main/java"/>
+	<classpathentry kind="src" path="HW1/Homework1/src/test/java"/>
+	<classpathentry kind="src" path="HW2/src/main/java"/>
+	<classpathentry kind="src" path="HW3/HW3/src/main/java"/>
+	<classpathentry kind="src" path="HW4/src/main/java"/>
+	<classpathentry kind="src" path="HW5/src/main/java"/>
+	<classpathentry kind="src" path="Minigame/battle2.2/src"/>
+	<classpathentry kind="lib" path="HW1/Homework1/Polynomials.jar"/>
+	<classpathentry kind="lib" path="HW2/Servers.jar"/>
+	<classpathentry kind="lib" path="HW3/HW3/WarehouseManagement.jar"/>
+	<classpathentry kind="lib" path="HW4/RestaurantManagement.jar"/>
+	<classpathentry kind="lib" path="Minigame/battle2.2/Betalfild.jar"/>
+	<classpathentry kind="output" path="HW1/Homework1/target/classes"/>
+</classpath>

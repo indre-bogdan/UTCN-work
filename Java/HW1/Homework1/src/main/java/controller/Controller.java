@@ -16,7 +16,7 @@ public class Controller {
 	private Polynomial[] polynomials = new Polynomial[2];
 	private Polynomial[] result = new Polynomial[2];
 	private final Pattern pattern = Pattern.compile("([-+])\\d+[x]\\^([-])?\\d+");
-	
+
 
 	public Controller() {
 		polynomials[0] = new Polynomial();

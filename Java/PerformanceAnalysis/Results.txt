@@ -1,0 +1,22 @@
+Results
+Processor: Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz
+Frequency: 2600000000
+Memory: 3.8 GiB/7.9 GiB
+Timing of test 1 for data transfer (1 MB): 2696400 nanoseconds ~ 2.6964 milliseconds
+Timing of test 2 for data transfer (1 MB): 1923000 nanoseconds ~ 1.923 milliseconds
+Timing of test 3 for data transfer (1 MB): 1615700 nanoseconds ~ 1.6157 milliseconds
+Timing of test 4 for data transfer (1 MB): 1729200 nanoseconds ~ 1.7292 milliseconds
+Timing of test 5 for data transfer (1 MB): 1864800 nanoseconds ~ 1.8648 milliseconds
+Average time of transfer tests: 1965820 nanoseconds ~ 1.9658200000000001 milliseconds
+Timing of addition test: 52600 nanoseconds ~ 0.0526 milliseconds
+The result of the sum is: 55
+Timing of substraction test: 27700 nanoseconds ~ 0.0277 milliseconds
+The result of the substraction is: -55
+Timing of multiplication test: 24000 nanoseconds ~ 0.024 milliseconds
+The result of the multiplication is: 3628800
+Timing of AND test: 12500 nanoseconds ~ 0.0125 milliseconds
+The result of the AND is: 0
+Timing of OR test: 10300 nanoseconds ~ 0.0103 milliseconds
+The result of the OR is: 15
+Timing of XOR test: 13500 nanoseconds ~ 0.0135 milliseconds
+The result of the XOR is: 4
